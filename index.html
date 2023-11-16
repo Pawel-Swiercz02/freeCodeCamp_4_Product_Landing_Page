@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Paweł Świercz">
+        <meta name="description" content="freeCodeCamp project number 4 - product landing page">
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="public/logo.png" alt="Original Trombones logo">
+            <!-- Navigation bar -->
+            <nav id="nav-bar">
+                <a href="#features-anchor-fix" class="nav-link">Features</a>
+                <a href="#how-it-works-anchor-fix" class="nav-link">How It Works</a>
+                <a href="#pricing-anchor-fix" class="nav-link">Pricing</a>
+            </nav>
+        </header>
+        <main id="main">
+            <!-- Form -->
+            <section id="get-email" class="text-center">
+                <h1>Handcrafted, home-made masterpieces</h1>
+                <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+                    <input id="submit" class="submit-button" type="submit" value="GET STARTED">
+                </form>
+            </section>
+            <!-- FEATURES -->
+            <section id="features">
+                <span id="features-anchor-fix"></span>
+                <section class="features-element">
+                    <i class="fa-solid fa-fire-flame-curved features-item1"></i>
+                    <div class="features-description">
+                        <h2 class="features-item2">Premium Materials</h2>
+                        <p class="features-item3">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </section>
+                <section class="features-element">
+                    <i class="fa-solid fa-truck features-item1"></i>
+                    <div class="features-description">
+                        <h2 class="features-item2">Fast Shipping</h2>
+                        <p class="features-item3">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </section>
+                <section class="features-element">
+                    <i class="fa-solid fa-battery-full features-item1"></i>
+                    <div class="features-description">
+                        <h2 class="features-item2">Quality Assurance</h2>
+                        <p class="features-item3">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </section>
+            </section>
+            <!-- VIDEO -->
+            <section id="how-it-works">
+                <span id="how-it-works-anchor-fix"></span>
+                <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=BdXli5Epewrah4at&amp;controls=0"  frameborder="0"  allowfullscreen></iframe>
+            </section>
+            <!-- PRICING -->
+            <section id="pricing">
+                <span id="pricing-anchor-fix"></span>
+                <div class="itembox-div">
+                    <p class="itembox-header">TENOR TROMBONE</p>
+                    <p class="itembox-price">$600</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <p class="itembox-description">Lorem ipsum dolor.</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <button class="itembox-button">SELECT</button>
+                </div>
+                <div class="itembox-div">
+                    <p class="itembox-header">BASS TROMBONE</p>
+                    <p class="itembox-price">$900</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <p class="itembox-description">Lorem ipsum dolor.</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <button class="itembox-button">SELECT</button>
+                </div>
+                <div class="itembox-div">
+                    <p class="itembox-header">VALVE TROMBONE</p>
+                    <p class="itembox-price">$1200</p>
+                    <p class="itembox-description">Plays similar to a Trumpet.</p>
+                    <p class="itembox-description">Great for Jazz Bands.</p>
+                    <p class="itembox-description">Lorem ipsum dolor.</p>
+                    <p class="itembox-description">Lorem ipsum.</p>
+                    <button class="itembox-button">SELECT</button>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <section id="footer-info">
+                <a href="#" class="nav-link">Privacy</a>
+                <a href="#" class="nav-link">Terms</a>
+                <a href="#" class="nav-link">Contact</a>
+            </section>
+                <p>Copyright 2023, Original Trombones</p>
+        </footer>
+    </body>
+</html>

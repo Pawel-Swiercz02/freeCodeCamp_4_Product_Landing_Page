@@ -1,0 +1,318 @@
+:root {
+    /* color palette */
+    --background-color:  #fbf9fa;
+    --text-color: #283739;;
+    --first-color:  #a3de83; 
+    --second-color:#2eb872; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Header - logo image and navigation bar with 3 elements*/
+#header {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    position: fixed; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+}
+
+#header-img {
+    width: 16rem;
+    margin-left: 3rem;
+}
+
+#nav-bar {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Main content of the page*/
+#main {
+    width: 50%;
+    min-width: 700px;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* FORM */
+input {
+    display: block;
+    margin: 1rem auto 0 auto;
+    min-width: 250px;
+}
+
+#email{
+    width: 30%;
+    padding: 0.3rem;
+}
+
+.submit-button {
+    width: 15%;
+    min-width: 150px;
+    padding: 0.6rem;
+    border: none;
+    background-color: var(--first-color);
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: var(--second-color);
+    transition: background-color 1s;
+}
+
+/* Features section */
+.features-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem auto 0 auto;
+    width: 100%;
+}
+
+.features-element:first-of-type {
+    margin-top: 6rem;
+}
+
+/* Header is fixed on top with a height of 5rem. Adding this invisible span fixes navigation bar for the features section. Now when you click on the Features anchor you can see all 3 of the features. */
+#features-anchor-fix { 
+    position: absolute;
+    top: 12rem;
+}
+
+#how-it-works-anchor-fix {
+    position: relative;
+    top: 0;
+}
+
+#pricing-anchor-fix {
+    position: static;
+    top: 0;
+}
+
+.features-description {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.features-item1 {
+    font-size: 3rem;
+    width: 20%;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.features-item2, .features-item3 {
+    width: 100%;
+    text-align: justify;
+}
+
+/* VIDEO SECTION - YouTube video using <iframe> tag */
+#how-it-works {
+    width: 560px;
+    margin: 5rem auto 0 auto;
+}
+
+#video {
+    width: 560px;
+    height: 315px;
+}
+
+/* PRICING BOXES - 3 divs identically styled */
+#pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.itembox-div {
+    border: 0.1rem solid var(--text-color);
+    width: 30%;
+    text-align: center;
+}
+
+.itembox-header {
+   background-color: lightgray;
+   padding: 0.8rem 0 0.8rem 0;
+   font-weight: bold;
+}
+
+.itembox-price {
+    padding: 1rem 0 1rem 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.itembox-description {
+    padding-bottom: 0.5rem;
+}
+
+.itembox-button {
+    display: block;
+    padding: 0.6rem;
+    border: none;
+    background-color: var(--first-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 1.3rem auto 1rem auto;
+}
+
+.itembox-button:hover {
+    background-color: var(--second-color);
+    transition: background-color 1s;
+}
+
+/* FOOTER */
+#footer {
+    width: 50%;
+    min-width: 700px;
+    background-color: lightgray;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+#footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) { 
+    #main {
+        width: 96%;
+        min-width: 390px;
+    }
+    
+    #pricing {
+        flex-direction: column;
+    }
+
+    #how-it-works-anchor-fix {
+        position: relative;
+        top: -25rem;
+    }
+
+    #pricing-anchor-fix {
+        position: relative;
+        top: -5rem;
+    }
+
+    .itembox-div {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    .itembox-div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #footer {
+        width: 100%;
+        min-width: 390px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    #header {
+        height: 8rem;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    #how-it-works-anchor-fix {
+        position: relative;
+        top: -28rem;
+    }
+
+    #pricing-anchor-fix {
+        position: relative;
+        top: -9rem;
+    }
+
+    #main {
+        padding-top: 8rem;
+    }
+
+    .itembox-div {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    
+    #header {
+        flex-direction: column;
+    }
+   
+    #header-img {
+        width: 15rem;
+        margin-left: 0;
+    }
+
+    #how-it-works {
+        width: 100%;
+    }
+
+    #video {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .features-description {
+        width: 100%;
+    }
+    
+    .features-item1 {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .features-item2, .features-item3 {
+        text-align: center;
+    }
+    .itembox-div {
+        width: 60%;
+    }
+}
